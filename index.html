@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   :root {
     --teal: #00C9A7;
     --teal-dark: #00A88D;
@@ -22,9 +22,9 @@
     --font-head: 'Sora', sans-serif;
     --font-body: 'DM Sans', sans-serif;
   }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     font-family: var(--font-body);
     background: var(--navy);
@@ -32,7 +32,7 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-
+ 
   /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -61,7 +61,7 @@
     transition: background 0.2s, transform 0.15s;
   }
   .nav-cta:hover { background: var(--teal-dark); transform: translateY(-1px); }
-
+ 
   /* HERO */
   .hero {
     min-height: 100vh;
@@ -117,7 +117,7 @@
   .hero-trust { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
   .trust-item { display: flex; align-items: center; gap: 7px; font-size: 14px; color: var(--light); }
   .trust-item::before { content: '✓'; color: var(--teal); font-weight: 700; }
-
+ 
   /* SECTIONS */
   section { padding: 100px 24px; }
   .container { max-width: 1100px; margin: 0 auto; }
@@ -135,7 +135,7 @@
     font-size: 17px; color: var(--gray); text-align: center;
     max-width: 600px; margin: 0 auto 64px; line-height: 1.7;
   }
-
+ 
   /* SERVICES */
   .services { background: var(--navy-mid); }
   .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
@@ -165,7 +165,7 @@
     transition: gap 0.2s;
   }
   .service-link:hover { gap: 10px; }
-
+ 
   /* WHY US */
   .why { background: var(--navy); }
   .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; margin-bottom: 64px; }
@@ -191,7 +191,7 @@
     font-size: 40px; color: var(--teal); margin-bottom: 6px;
   }
   .stat-label { font-size: 14px; color: var(--gray); }
-
+ 
   /* PROCESS */
   .process { background: var(--navy-mid); }
   .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 48px; position: relative; }
@@ -212,7 +212,7 @@
   }
   .process-step h4 { font-family: var(--font-head); font-weight: 700; font-size: 18px; margin-bottom: 12px; }
   .process-step p { font-size: 15px; color: var(--gray); line-height: 1.7; }
-
+ 
   /* CTA */
   .cta-section {
     background: linear-gradient(135deg, #009E82 0%, #007B66 50%, #005F50 100%);
@@ -248,7 +248,7 @@
   }
   .btn-outline-white:hover { border-color: white; transform: translateY(-2px); }
   .cta-note { font-size: 14px; color: rgba(255,255,255,0.65); }
-
+ 
   /* FOOTER */
   footer {
     background: var(--navy); border-top: 1px solid rgba(255,255,255,0.07);
@@ -285,7 +285,7 @@
     text-decoration: none; font-size: 14px; transition: background 0.2s, color 0.2s;
   }
   .social-links a:hover { background: var(--teal); color: var(--navy); }
-
+ 
   /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
@@ -296,7 +296,7 @@
   .hero p { animation: fadeUp 0.6s 0.25s ease both; }
   .hero-btns { animation: fadeUp 0.6s 0.35s ease both; }
   .hero-trust { animation: fadeUp 0.6s 0.45s ease both; }
-
+ 
   /* RESPONSIVE */
   @media (max-width: 768px) {
     nav { padding: 16px 20px; }
@@ -311,7 +311,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
@@ -326,7 +326,7 @@
   </div>
   <a href="https://calendly.com/lawrencekhun-kmdigitalagency/30min" target="_blank" class="nav-cta">Get My Free Consultation</a>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
@@ -346,7 +346,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- SERVICES -->
 <section class="services" id="services">
   <div class="container">
@@ -354,7 +354,7 @@
     <h2 class="section-title">AI Solutions That Work While You Sleep</h2>
     <p class="section-sub">Three powerful AI tools designed to automate your customer interactions, build your reputation, and grow your business—all without adding to your workload.</p>
     <div class="services-grid">
-
+ 
       <div class="service-card">
         <div class="service-icon">💬</div>
         <h3>AI Chatbot</h3>
@@ -366,7 +366,7 @@
         </ul>
         <a href="#contact" class="service-link">Learn More →</a>
       </div>
-
+ 
       <div class="service-card">
         <div class="service-icon">⭐</div>
         <h3>Reputation Engine</h3>
@@ -378,7 +378,7 @@
         </ul>
         <a href="#contact" class="service-link">Learn More →</a>
       </div>
-
+ 
       <div class="service-card">
         <div class="service-icon">🌐</div>
         <h3>Custom Websites</h3>
@@ -390,11 +390,11 @@
         </ul>
         <a href="#contact" class="service-link">Learn More →</a>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- WHY US -->
 <section class="why" id="why">
   <div class="container">
@@ -443,7 +443,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- PROCESS -->
 <section class="process" id="process">
   <div class="container">
@@ -469,7 +469,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- CTA -->
 <section class="cta-section" id="contact">
   <div class="cta-pattern"></div>
@@ -485,7 +485,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
@@ -522,6 +522,23 @@
     </div>
   </div>
 </footer>
-
+ 
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '69d436fea27fc009642ef506' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+ 
 </body>
 </html>
