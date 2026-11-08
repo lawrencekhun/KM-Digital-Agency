@@ -143,6 +143,16 @@
   .leak h3 { font-size: 19px; font-weight: 600; margin-bottom: 10px; }
   .leak p { color: #B9BCC3; font-size: 16px; }
 
+  .leak .fix { margin-top: 20px; padding-top: 16px; border-top: 1px solid #2A2E37; color: var(--signal); font-weight: 600; font-size: 15px; }
+  .fix-list, .step-list { list-style: none; margin-top: 12px; display: grid; gap: 7px; }
+  .fix-list li, .step-list li { position: relative; padding-left: 18px; font-size: 15px; line-height: 1.4; }
+  .fix-list li { color: #D4D6DB; }
+  .step-list li { color: var(--ink-2); }
+  .fix-list li::before, .step-list li::before { content: '✓'; position: absolute; left: 0; font-weight: 700; }
+  .fix-list li::before { color: var(--signal); }
+  .step-list li::before { color: var(--green); }
+  .leaks .report { margin-top: 20px; }
+  .cta h2 { margin-bottom: 28px !important; }
   /* SYSTEM */
   .sys-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 20px; }
   .sys {
@@ -246,8 +256,7 @@
       <div class="logo-text">KM Digital <span>Agency</span></div>
     </a>
     <div class="nav-links">
-      <a href="#leaks">The problem</a>
-      <a href="#system">How we fix it</a>
+      <a href="#leaks">How it works</a>
       <a href="#work">Work</a>
       <a href="#about">About</a>
     </div>
@@ -259,14 +268,14 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">For service businesses in the South Bay &amp; Orange County</div>
+      <div class="eyebrow">South Bay &amp; Orange County service businesses</div>
       <h1>More <em>booked jobs</em> from the people already looking for you.</h1>
-      <p class="lede">Most local businesses don't have a traffic problem. They lose jobs between the search and the booking — a thin Google profile, a website that doesn't convince, an inquiry nobody answers until tomorrow. We build and run the system that closes those gaps.</p>
+      <p class="lede">We fix the three places local businesses lose jobs: Google, your website, and slow replies.</p>
       <div class="hero-ctas">
         <a href="https://calendly.com/lawrencekhun-kmdigitalagency/30min" target="_blank" rel="noopener" class="btn btn-primary">Get a free lead audit →</a>
-        <a href="#system" class="btn btn-ghost">See how it works</a>
+        <a href="#leaks" class="btn btn-ghost">How it works</a>
       </div>
-      <p class="fine">30 minutes. You'll leave with a list of fixes whether you hire us or not.</p>
+      <p class="fine">Free · 30 minutes · No obligation</p>
     </div>
 
     <div class="timeline-card" aria-label="Example of a lead moving through the system">
@@ -276,99 +285,78 @@
       </div>
       <ul class="tc-list">
         <li class="done">
-          <div class="tc-time">TUE · 8:41 PM</div>
-          <div class="tc-text">Homeowner searches <strong>"ADU builder near me"</strong> and picks you from the map — more recent reviews than anyone nearby.</div>
+          <div class="tc-time">8:41 PM</div>
+          <div class="tc-text">Finds you on Google</div>
         </li>
         <li class="done">
           <div class="tc-time">8:46 PM</div>
-          <div class="tc-text">Sends a quote request from your website.</div>
+          <div class="tc-text">Requests a quote on your site</div>
         </li>
         <li class="done">
           <div class="tc-time">8:46 PM</div>
-          <div class="tc-text">Gets a reply in seconds, answers three quick questions, picks a time.</div>
+          <div class="tc-text">Gets an instant reply</div>
         </li>
         <li class="win">
           <div class="tc-time">8:50 PM</div>
-          <div class="tc-text">Estimate on your calendar while you're off the clock.</div>
+          <div class="tc-text">Books an estimate</div>
           <span class="tc-booked">✓ Booked · Thu 10:00 AM</span>
         </li>
         <li>
-          <div class="tc-time">AFTER THE JOB</div>
-          <div class="tc-text">Review request goes out automatically — and the next homeowner finds you.</div>
+          <div class="tc-time">After the job</div>
+          <div class="tc-text">Leaves you a review</div>
         </li>
       </ul>
-      <div class="tc-foot">No voicemail. No "we'll get back to you tomorrow."</div>
     </div>
   </div>
 </header>
 
-<!-- LEAKS -->
+<!-- LEAKS + FIXES -->
 <section class="leaks" id="leaks">
   <div class="wrap">
     <div class="section-head">
-      <div class="label">Where jobs get lost</div>
-      <h2>You're already earning the leads. Here's where they leak.</h2>
-      <p>Every job you lose disappears at one of three moments. Most owners never see it happen, because the customer just quietly calls someone else.</p>
+      <div class="label">How it works</div>
+      <h2>Three leaks. One system to fix them.</h2>
     </div>
     <div class="leak-grid">
       <div class="leak">
         <div class="leak-num">01</div>
-        <h3>Before they find you</h3>
-        <p>Customers compare you on Google before they ever see your site. Fewer or older reviews than the business down the street, and they call them first.</p>
+        <h3>Weak Google reviews</h3>
+        <p>They call the competitor first.</p>
+        <div class="fix">→ Automatic review requests after every job</div>
+        <ul class="fix-list">
+          <li>Text sent when the job is done</li>
+          <li>Happy customers go to Google</li>
+          <li>Unhappy ones come to you first</li>
+        </ul>
       </div>
       <div class="leak">
         <div class="leak-num">02</div>
-        <h3>When they land</h3>
-        <p>A slow, dated or generic website makes a great business look small. Visitors leave without reaching out, and you never know they were there.</p>
+        <h3>A website that doesn't convince</h3>
+        <p>Visitors leave without calling.</p>
+        <div class="fix">→ A fast custom site built to get quote requests</div>
+        <ul class="fix-list">
+          <li>Shows your real work</li>
+          <li>Quote button on every page</li>
+          <li>Loads fast on phones</li>
+        </ul>
       </div>
       <div class="leak">
         <div class="leak-num">03</div>
-        <h3>After they reach out</h3>
-        <p>You're on a jobsite when the inquiry comes in. By the time you call back, they've booked whoever answered first.</p>
+        <h3>Slow replies</h3>
+        <p>Whoever answers first gets the job.</p>
+        <div class="fix">→ Instant replies and booking, 24/7</div>
+        <ul class="fix-list">
+          <li>Replies in seconds, day or night</li>
+          <li>Answers common questions</li>
+          <li>Books estimates on your calendar</li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- SYSTEM -->
-<section id="system">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="label">How we fix it</div>
-      <h2>One system, measured in booked jobs.</h2>
-      <p>We don't sell you a website, a chatbot and a review tool and leave you to connect them. We build one pipeline — from search to signed job — and we answer for the result.</p>
-    </div>
-
-    <div class="sys-grid">
-      <div class="sys">
-        <div class="sys-fixes">Fixes leak 01</div>
-        <h3>Get chosen on Google</h3>
-        <div class="sys-what">Automated review system</div>
-        <p>Every finished job triggers a short review request by text. Happy customers go straight to Google. Unhappy ones reach you privately first, so you can make it right.</p>
-      </div>
-      <div class="sys">
-        <div class="sys-fixes">Fixes leak 02</div>
-        <h3>Win the visit</h3>
-        <div class="sys-what">Custom website</div>
-        <p>A fast, custom-built site that shows your real work and makes the next step obvious on every page — built to turn visitors into quote requests, not just look nice.</p>
-      </div>
-      <div class="sys">
-        <div class="sys-fixes">Fixes leak 03</div>
-        <h3>Answer every lead</h3>
-        <div class="sys-what">Instant response &amp; booking</div>
-        <p>Website inquiries and after-hours messages get a reply in seconds from an assistant trained on your business. It answers the common questions, qualifies the lead, and puts a time on your calendar.</p>
-      </div>
-    </div>
-
     <div class="report">
-      <div>
-        <h3>Every month, one simple report.</h3>
-        <p>So you know exactly what the system did for you — in numbers you care about.</p>
-      </div>
+      <h3>Monthly report: what you got for your money.</h3>
       <div class="report-metrics">
-        <span>Leads in</span>
-        <span>Response time</span>
-        <span>New reviews</span>
+        <span>Leads</span>
+        <span>Reviews</span>
         <span class="key">Jobs booked</span>
       </div>
     </div>
@@ -394,7 +382,7 @@
             <span class="status">Launching soon</span>
           </div>
           <h3>Vando Construction</h3>
-          <p>A full website with an interactive ADU configurator: homeowners choose a floor plan and finishes, see their unit come together, and send a qualified quote request — before the first phone call.</p>
+          <p>Website with a build-your-ADU configurator.</p>
         </div>
       </article>
       <article class="project">
@@ -408,7 +396,7 @@
             <span class="status">Launching soon</span>
           </div>
           <h3>ZARUN Natural Resources</h3>
-          <p>Company website for an international antimony producer.</p>
+          <p>Company website for an antimony producer.</p>
         </div>
       </article>
     </div>
@@ -420,24 +408,28 @@
 <section id="process">
   <div class="wrap">
     <div class="section-head">
-      <div class="label">How it works</div>
+      <div class="label">Getting started</div>
       <h2>Start with the audit. Decide after.</h2>
     </div>
     <div class="steps">
       <div class="step">
         <div class="step-n">Step 1</div>
-        <h3>Free lead audit</h3>
-        <p>We review your Google presence and your website, and send a test inquiry to see how fast your business responds. You get the findings either way.</p>
+        <h3>Free audit</h3>
+        <ul class="step-list">
+          <li>We check your Google profile</li>
+          <li>We review your website</li>
+          <li>We test how fast you reply</li>
+        </ul>
       </div>
       <div class="step">
         <div class="step-n">Step 2</div>
         <h3>We build it</h3>
-        <p>We build only the pieces you're missing and connect them to the phone, calendar and inbox you already use. You approve everything before it goes live.</p>
+        <p>Only what you're missing. You approve it all.</p>
       </div>
       <div class="step">
         <div class="step-n">Step 3</div>
-        <h3>We run it and report</h3>
-        <p>We keep everything running and tuned, and send you a monthly report on leads and booked jobs. No long-term contract.</p>
+        <h3>We run it</h3>
+        <p>Monthly reports. No long-term contract.</p>
       </div>
     </div>
   </div>
@@ -448,11 +440,10 @@
   <div class="wrap about-grid">
     <div>
       <div class="label">Who we are</div>
-      <h2>Two founders. You talk to the people doing the work.</h2>
+      <h2>Two local founders. No handoffs.</h2>
     </div>
     <div>
-      <p>KM Digital Agency is a small team based in the South Bay. Lawrence builds every system himself; Aiden works with clients day to day. No account managers, no outsourced developers, no handoffs.</p>
-      <p>We keep our client list small on purpose, so every business we take on gets our full attention.</p>
+      <p>Based in the South Bay. You work directly with the people building your system.</p>
       <div class="founders">
         <div class="founder">
           <div class="avatar">LK</div>
@@ -471,9 +462,8 @@
 <section class="cta" id="contact">
   <div class="wrap">
     <h2>Find out where your jobs are leaking.</h2>
-    <p>Book a free 30-minute lead audit. We'll check your Google presence, your website and your response time, and walk you through what we find.</p>
     <a href="https://calendly.com/lawrencekhun-kmdigitalagency/30min" target="_blank" rel="noopener" class="btn btn-primary">Book my free audit →</a>
-    <p class="fine">No commitment. No pitch deck.</p>
+    <p class="fine">Free · 30 minutes · No obligation</p>
   </div>
 </section>
 
