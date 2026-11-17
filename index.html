@@ -190,6 +190,9 @@
   .project-meta { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
   .project-meta .industry { font-size: 13px; color: var(--muted); }
   .status { font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 99px; background: var(--green-soft); color: var(--green); }
+  .status.live { background: var(--green); color: #fff; }
+  .project-link { display: inline-block; margin-top: 14px; font-size: 15px; font-weight: 600; color: var(--green); text-decoration: none; }
+  .project-link:hover { text-decoration: underline; }
   .project h3 { font-size: 22px; font-weight: 600; margin-bottom: 8px; letter-spacing: -0.01em; }
   .project p { color: var(--ink-2); font-size: 16px; }
 
@@ -387,16 +390,16 @@
       </article>
       <article class="project">
         <div class="project-img">
-          <!-- Replace with: <img src="images/zarun.webp" alt="ZARUN Natural Resources website"> -->
-          ZARUN Natural Resources — screenshot
+          <img src="images/zarun.webp" alt="ZARUN Natural Resources website homepage">
         </div>
         <div class="project-body">
           <div class="project-meta">
             <span class="industry">Mining · Bangkok, Thailand</span>
-            <span class="status">Launching soon</span>
+            <span class="status live">● Live</span>
           </div>
           <h3>ZARUN Natural Resources</h3>
-          <p>Company website for an antimony producer.</p>
+          <p>Company website for an antimony producer, with ongoing maintenance and updates.</p>
+          <a class="project-link" href="https://zarunresources.com" target="_blank" rel="noopener">Visit site →</a>
         </div>
       </article>
     </div>
